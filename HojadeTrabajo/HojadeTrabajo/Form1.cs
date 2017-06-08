@@ -71,7 +71,23 @@ namespace HojadeTrabajo
             label4.Text = resultado;
         }
 
+        public void invertir() {
+            string nombre = textBox1.Text;
+            string apellido = textBox2.Text;
+            string ninvertido = "";
+            string ainvertido = "";
 
+            char[] charArray1 = nombre.ToCharArray();
+            Array.Reverse(charArray1);
+            ninvertido = new string(charArray1);
+
+            char[] charArray2 = apellido.ToCharArray();
+            Array.Reverse(charArray2);
+            ainvertido = new string(charArray2);
+
+            label4.Text = ninvertido + " " + ainvertido;
+        }
+         
         private void button1_Click(object sender, EventArgs e)
         {
             hipotenusa();
@@ -80,6 +96,11 @@ namespace HojadeTrabajo
         private void button2_Click(object sender, EventArgs e)
         {
             vocales();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            invertir();
         }
     }
 }
