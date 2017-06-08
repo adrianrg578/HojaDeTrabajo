@@ -1,0 +1,4 @@
+1. Un commit viene siendo como una modificacion que es posible aplicar de forma permanente en el programa.
+2. El Merge realiza la union de los componentes, omitiendo los que ya estan repetidos y solo agregando la parte nueva
+3. El pull basicamente el la descarga de los datos que posee el repositorio, mientras que el push es la subida de lo nuevo al repositorio.
+4. Las ramas indican los distintos caminos que puede tomar el proyecto segun nosotros lo necesitemos
