@@ -85,7 +85,7 @@ namespace HojadeTrabajo
             Array.Reverse(charArray2);
             ainvertido = new string(charArray2);
 
-            label4.Text = ninvertido + " " + ainvertido;
+            label4.Text = ninvertido + " " + ainvertido + "_201404297";
         }
 
         public void regla3() {
