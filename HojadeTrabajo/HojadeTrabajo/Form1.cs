@@ -87,7 +87,18 @@ namespace HojadeTrabajo
 
             label4.Text = ninvertido + " " + ainvertido;
         }
-         
+
+        public void regla3() {
+            int valor1 = Int32.Parse(textBox1.Text);
+            int valor2 = Int32.Parse(textBox2.Text);
+            int valor3 = Int32.Parse(textBox3.Text);
+            int resultado = 0;
+
+            resultado = (valor3 * valor2) / valor1;
+
+            label4.Text = Convert.ToString(resultado);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             hipotenusa();
@@ -101,6 +112,11 @@ namespace HojadeTrabajo
         private void button3_Click(object sender, EventArgs e)
         {
             invertir();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            regla3();
         }
     }
 }
